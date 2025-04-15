@@ -36,7 +36,7 @@ useEffect(()=>{
     const handleClick = (index) => {
       if (state[index] !== null || winner) return;
     const copyState = [...state];
-    if (copyState[index] !== null) return; // Prevent overwrite
+    if (copyState[index] !== null) return; 
     copyState[index] = isXTurn ? 'X' : 'O';
     setState(copyState);
     setisXTurn(!isXTurn);
